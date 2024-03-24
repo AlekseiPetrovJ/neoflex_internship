@@ -4,8 +4,6 @@ salary-settings:
   max-days-vacation: 40
 # swagger-ui custom path
 springdoc:
-  default-consumes-media-type: application/json
-  default-produces-media-type: application/json
   swagger-ui:
     path: /swagger-ui.html
   # /api-docs endpoint custom path

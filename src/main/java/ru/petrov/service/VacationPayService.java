@@ -19,7 +19,7 @@ public class VacationPayService {
     }
 
     /**
-     * @return false if not found
+     * @return vacation pay
      * @throws DurationVacationNotCorrectException if numberOfVacationDays not between min and max days of vacation
      */
     public double calculateVacationPay(Double averageSalary, int numberOfVacationDays) {
@@ -33,8 +33,6 @@ public class VacationPayService {
             throw new DurationVacationNotCorrectException(numberOfVacationDays + " days more than maximum (" + maxDays + ")");
         }
         double daysPerYear = Double.parseDouble(environment.getProperty("salary-settings.number-days-per-year"));
-        //TODO добавить валидацию входных данных Средняя зарплата больше нуля
-        //TODO переписать вообще на DTO
         return round(averageSalary * numberOfVacationDays / daysPerYear);
     }
 
