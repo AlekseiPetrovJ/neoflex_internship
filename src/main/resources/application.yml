@@ -1,0 +1,13 @@
+salary-settings:
+  number-days-per-year: 351.6
+  min-days-vacation: 1
+  max-days-vacation: 40
+# swagger-ui custom path
+springdoc:
+  default-consumes-media-type: application/json
+  default-produces-media-type: application/json
+  swagger-ui:
+    path: /swagger-ui.html
+  # /api-docs endpoint custom path
+  api-docs:
+    path: /api-docs
