@@ -9,3 +9,8 @@ springdoc:
   # /api-docs endpoint custom path
   api-docs:
     path: /api-docs
+holidays:
+  federal:
+    - 2024-02-23
+    - 2024-03-08
+    - 2024-05-01
